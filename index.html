@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
+    <link rel="stylesheet" href="styles/font.css">
     <script src="https://kit.fontawesome.com/33caea413b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <img src="images/logo2.png" alt="" class="brand-logo">
-            <ul class="nav-bar">
+<body class="poppins-font">
+    <header class="max-w-7xl mx-auto">
+        <!-- nav bar -->
+        <nav class="nav-bar flex justify-between items-center p-6">
+
+            <div>
+                <img src="images/logo2.png" alt="" class="brand-logo">
+            </div>
+            
+                <ul class="nav-menu flex gap-12 text-[#707070]">
                 <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Services</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Cases</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Blog</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Contact Us</a></li>
+                <li class="menu-item"><a href="" class="menu-link">Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li class="menu-item"><a href="" class="menu-link">Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li class="menu-item"><a href="" class="menu-link">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li class="menu-item"><a href="" class="menu-link">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
             </ul>
-            <button class="consulation-btn">Free Consultation</button>
+
+                <button class="consulation-btn py-3 px-5 bg-[#B68C5A] text-white rounded-lg cursor-pointer">Free Consultation</button>
         </nav>
+
+        <!-- banner -->
+        <div class="banner max-w-7xl bg-[url(images/banner.png)] h-[560px] bg-cover text-white flex justify-center items-center flex-col">
+            <div class="content-container w-[50%] text-center">
+            <h1 class="banner-title text-7xl eb-garamond-font mb-7 font-extrabold">We Provide Effective Legal Solutions</h1>
+            <p class="banner-description mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="search-box-container">
+                <input class="search-box bg-white rounded-lg max-w-full p-3 w-[500px] px-5 text-black outline-none" type="search" name="" id="" placeholder="Search your services">
+                <button class="search-btn bg-[#B68C5A] rounded-lg py-3 px-6 cursor-pointer ml-3">Search</button>
+            </div>
+            </div>
+        </div>
     </header>
     
     <main>
